@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+var x=0;
+var a=0;
+a=parseInt(prompt("Digite un valor"));
+var b=0;
+b=parseInt(prompt("Digite un valor"));
+var c=0;
+c=parseInt(prompt("Digite un valor"));
+
+var n= b**2;
+var m=4*(a*c);
+var d= n-m;
+
+var ecuacion=function ()
+{
+if  (d<0){
+alert("NO TIENE SOLUCIONES REALES");
+}
+else if(d=0){
+x=-b/2*a;    document.write("Solucion real: " + x);   console.log("Solucion real: " +x);
+}
+else if(d>0)
+{
+ x=(-b+math.sqrt(d))/2*a;  document.write("Solucion real: " + x);   console.log("Solucion real: " +x);
+}
+}
+ecuacion();
+
+
+
+
+</script>
+</head>
+</html>

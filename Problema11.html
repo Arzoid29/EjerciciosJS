@@ -1,0 +1,37 @@
+<html>
+<head>
+<script>
+var a=0;
+a=parseInt(prompt("Digite el numero de la poblacion actual"));
+var b=0;
+b=parseInt(prompt("Digite el numero de la tasa de natalidad"));
+var c=0;
+c=parseInt(prompt("Digite el numero de la tasa de mortalidad esperada"));
+
+/*a es el numero de la poblacion actual, b es la tasa de natalidad y c es la tasa de mortalidad, 
+como las tasas se digitan en porcientos, la cantidad que contiene b y c la dividimos en 100 para 
+convertirlos en numeros decimales, luego hacemos la multiplicacion de c con la cantidad de anos que 
+nos pide el programa, lo mismo se hizo con b, entonces b es la tasa de natalidad de los siguientes
+ diez anos, y c es la tasa de mortalidad de los siguientes diez anos,luego le restamos la cantidad 
+ de c a la variable a para mas tarde sumarle el valor de b, entonces estamos diciendo que a una 
+ poblacion de x personas se le esta y cantidad de personas que son las que han muerto dentro de
+  un parametro de diez anos, y se le suma una cantidad z que son las personas nacidas en aproximadamente
+   diez anos//
+*/
+b=b/100;
+c=c/100;
+c=c*10;
+b=b*10;
+a= a-c;
+a=a+b;
+
+document.write("Poblacion Dentro de 10 a&ntilde;os = "+a);
+
+
+
+
+</script>
+</head>
+</html>
+
+
